@@ -1,0 +1,71 @@
+/* --- Стили для Daily Navigation (AnuPuccin Style) --- */
+
+/* 1. Контейнер (Карточка) */
+.callout[data-callout="dailynav"] {
+    background-color: var(--background-secondary); /* Цвет вторичного фона темы */
+    border: 1px solid var(--background-modifier-border); /* Тонкая рамка */
+    border-radius: 12px; /* Сильное скругление, как принято в Mocha */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+    margin: 0 0 24px 0; /* Отступ снизу */
+    padding: 0;
+    overflow: hidden; /* Чтобы дети не вылезали за скругление */
+}
+
+/* 2. Скрываем стандартный заголовок Callout */
+.callout[data-callout="dailynav"] .callout-title {
+    display: none;
+}
+
+/* 3. Контентная область */
+.callout[data-callout="dailynav"] .callout-content {
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 4. Текст внутри (символы < || >) */
+.callout[data-callout="dailynav"] .callout-content p {
+    margin: 0;
+    color: var(--text-muted); /* Приглушенный цвет для разделителей */
+    font-family: var(--font-monospace); /* Моноширинный шрифт для стиля "код" */
+    font-size: 0.9em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+    /* Выравнивание элементов по центру */
+    display: flex; 
+    align-items: center;
+    gap: 8px; /* Расстояние между стрелками и кнопками */
+}
+
+/* 5. Ссылки (Кнопки-таблетки) */
+.callout[data-callout="dailynav"] a.internal-link {
+    background-color: var(--background-primary); /* Фон кнопки (чуть темнее панели) */
+    color: var(--color-accent); /* Акцентный цвет темы (розовый/лиловый в Mocha) */
+    padding: 6px 16px;
+    border-radius: 20px; /* Превращаем в "таблетку" */
+    text-decoration: none !important;
+    font-family: var(--font-interface);
+    font-weight: 600;
+    font-size: 1.05em;
+    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 6. Эффект при наведении (Hover) */
+.callout[data-callout="dailynav"] a.internal-link:hover {
+    background-color: var(--interactive-accent); /* Заливка цветом акцента */
+    color: var(--text-on-accent); /* Белый текст на акценте */
+    box-shadow: 0 0 12px var(--interactive-accent); /* Эффект свечения (Neon glow) */
+    transform: translateY(-1px); /* Легкий подъем вверх */
+    border-color: transparent;
+}
+
+body:has(.callout[data-callout="dailynav"] .callout-content a.internal-link:hover) .hover-popover,
+body:has(.callout[data-callout="dailynav"] .callout-content a.internal-link:hover) .tooltip {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important; /* На всякий случай блокируем взаимодействие */
+}

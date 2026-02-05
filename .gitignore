@@ -1,3 +1,10 @@
 .trash
 .obsidian/plugins/iconic/data.json.*
 .DS_Store
+
+# Скрытие заметок, после первой инициализации
+00 - Projects
+01 - Areas
+02 - Resources
+03 - Archive
+04 - Daily

@@ -21,7 +21,7 @@
   "enableInlineDataview": true,
   "enableDataviewJs": true,
   "enableInlineDataviewJs": true,
-  "prettyRenderInlineFields": true,
+  "prettyRenderInlineFields": false,
   "prettyRenderInlineFieldsInLivePreview": true,
   "dataviewJsKeyword": "dataviewjs"
 }

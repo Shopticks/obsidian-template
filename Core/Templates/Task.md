@@ -1,31 +1,36 @@
 <%*
-const taskName = await tp.system.prompt("Название задачи:", "Новая задача");
-await tp.file.rename(taskName);
-
+const taskName = await tp.system.prompt("Название задачи", "Новая задача");
 const status = await tp.system.suggester(["ToDo", "In-Progress", "Done"], ["ToDo", "In-Progress", "Done"]);
 const priority = await tp.system.suggester(["Low", "Medium", "High"], ["Low", "Medium", "High"]);
-const daysOffset = await tp.system.prompt("Дедлайн: через сколько дней, начиная от сегодняшнего? (0 = сегодня)", "0");
+const daysOffset = await tp.system.prompt("Дедлайн (дней от сегодня)", "0");
 const dueDate = tp.date.now("YYYY-MM-DD", parseInt(daysOffset) || 0);
-const projectName = await tp.system.prompt("Название проекта (оставьте пустым, если без проекта):", "");
 
-let targetPath = null;
+const projectFolders = app.vault.getAbstractFileByPath("00 - Projects")?.children
+    .filter(f => f instanceof tp.obsidian.TFolder)
+    .map(f => f.name) || [];
 
-if (projectName && projectName.trim() !== "") {
-    const cleanProjectName = projectName.trim();
-    const folderPath = "00 - Projects/" + cleanProjectName;
-    
-    try {
-        await app.vault.createFolder(folderPath);
-    } catch (e) {
-        if (!e.message.includes("already exists")) throw e;
-    }
-    
-    targetPath = folderPath + "/" + taskName;
+let projectName = await tp.system.suggester(["Без проекта", "+ Создать новый...", ...projectFolders], ["none", "new", ...projectFolders]);
+
+if (projectName === "new") {
+    projectName = await tp.system.prompt("Введите название нового проекта");
 }
 
-// Формируем контент с переносами строк и отступами для списка
+let folderPath = "";
+if (projectName && projectName !== "none") {
+    folderPath = "00 - Projects/" + projectName;
+    if (!(await app.vault.adapter.exists(folderPath))) {
+        await app.vault.createFolder(folderPath);
+    }
+}
+
+await tp.file.rename(taskName);
+if (folderPath) {
+    await tp.file.move(folderPath + "/" + taskName);
+}
+
 const content = `---
-type: Task${projectName && projectName.trim() !== "" ? `\nproject: ${projectName.trim()}` : ""}
+type: Task
+${projectName && projectName !== "none" ? `project: "[[${projectName}]]"` : ""}
 status:
   - ${status}
 priority:
@@ -33,27 +38,29 @@ priority:
 due_date: ${dueDate}
 created: ${tp.date.now("YYYY-MM-DD")}
 ---
-## 🎯 Цель
 
-Описание твоей цели.
+# ${taskName}
 
-## 🛠️ Действия к решению
+> [!info] Инфо
+> **Проект:** ${projectName && projectName !== "none" ? `[[${projectName}]]` : "—"}
+> **Приоритет:** ${priority}
+> **Дедлайн:** ${dueDate}
 
-Что нужно сделать?
+## 🎯 Суть задачи
+*Краткое описание того, что именно нужно сделать и зачем.*
 
-## ✅ Решение / Итог
+## ✅ Критерии готовности (DoD)
+- [ ] 
 
-Как достичь решения задачи?
+## 🛠 Действия
+- [ ] 
 
-## 📌 Связи
-- Проекты:${projectName && projectName.trim() !== "" ? `\n  - [[${projectName.trim()}]]` : "\n  - Проект 1"}
-- Заметки:
-  - Заметка 1
+## 📎 Ресурсы и материалы
+- 
+
+## 🏁 Результат
+*Заметки по итогу выполнения.*
 `;
-
-if (targetPath) {
-    await tp.file.move(targetPath);
-}
 
 tR += content;
 %>

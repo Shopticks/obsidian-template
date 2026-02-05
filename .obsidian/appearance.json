@@ -7,8 +7,11 @@
   "accentColor": "#8a5cf4",
   "enabledCssSnippets": [
     "properties-colors",
+    "test",
+    "daily-nav",
+    "media-grid-snippet",
     "rainbow-indents",
-    "media-grid-snippet"
+    "project-progress"
   ],
   "theme": "obsidian"
 }

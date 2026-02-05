@@ -6,6 +6,7 @@
     "added date": "date",
     "priority": "multitext",
     "type": "multitext",
-    "status": "multitext"
+    "status": "multitext",
+    "progress": "number"
   }
 }

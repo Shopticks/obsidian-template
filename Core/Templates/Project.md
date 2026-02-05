@@ -1,6 +1,5 @@
 <%*
-let projectName = await tp.system.prompt("Введите название проекта: ", "Проект");
-
+let projectName = await tp.system.prompt("Введите название проекта", "Проект");
 const folderPath = "00 - Projects/" + projectName;
 
 try {
@@ -9,32 +8,24 @@ try {
     if (!e.message.includes("already exists")) throw e;
 }
 
-await tp.file.move(folderPath + "/" + projectName);
+const allImages = tp.app.vault.getFiles().filter(f => 
+    ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(f.extension)
+);
+const bannerFile = await tp.system.suggester((f) => f.path, allImages);
+const banner = bannerFile ? bannerFile.path : "";
 
-<!-- ADDING BANNER -->
+const status = await tp.system.suggester(
+    ["Active", "Planning", "Paused", "Completed", "Rejected"], 
+    ["Active", "Planning", "Paused", "Completed", "Rejected"]
+);
 
-function getAllImagesHelper(files) { return files.filter(file => { if (file.name) { const ext = file.name.split('.').pop().toLowerCase(); return ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp', 'tiff'].includes(ext); } return false; }); }
+let progressNum = await tp.system.prompt("Прогресс (0-100)", "0");
+let progress = Math.min(Math.max(parseInt(progressNum) || 0, 0), 100);
 
-const files_path = tp.app.vault.getFiles();
-const allImages = getAllImagesHelper(files_path);
-
-const banner = await tp.system.suggester(allImages, allImages);
-
-<!-- GET YAML PROPERTIES -->
-
-const status = await tp.system.suggester(["Active", "Planning", "Paused", "Completed", "Rejected"], ["Active", "Planning", "Paused", "Completed", "Rejected"]);
-
-let progressNum = await tp.system.prompt("Введите прогресс проекта (0-100)", "0");
-
-let progress = parseFloat(progressNum);
-if (isNaN(progress) || progress < 0 || progress > 100) { progress = 0; } 
-else { progress = Math.round(progress); }
-
-let daysOffset = await tp.system.prompt("Дедлайн: через сколько дней, начиная от сегодняшнего? (0 = сегодня)", "0");
+let daysOffset = await tp.system.prompt("Дедлайн (через сколько дней?)", "7");
 const dueDate = tp.date.now("YYYY-MM-DD", parseInt(daysOffset) || 0);
 
-<!-- PROJECT BASE FOR TASKS -->
-const content = `
+const baseContent = `
 filters:
   and:
     - file.folder == "${folderPath}"
@@ -45,29 +36,22 @@ formulas:
 views:
   - type: table
     name: Table
-    order:
-      - file.name
-      - priority
-      - status
-      - due_date
+    order: [file.name, priority, status, due_date]
     sort:
       - property: due_date
         direction: ASC
       - property: formula.Sorted priority
         direction: ASC
-      - property: formula.Sorted status
-        direction: ASC
-      - property: file.name
-        direction: ASC
 `;
+
 const baseName = "Base Of Tasks for " + projectName + ".base";
-await tp.app.vault.create(folderPath + "/" + baseName, content);
+await tp.app.vault.create(folderPath + "/" + baseName, baseContent);
+await tp.file.move(folderPath + "/" + projectName);
 %>---
 banner: "<% banner %>"
 type: Project
 status:
   - <% status %>
-# planning | active | paused | completed | rejected
 start_date: <% tp.date.now("YYYY-MM-DD") %>
 due_date: <% dueDate %>
 progress: <% progress %>
@@ -76,12 +60,27 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 ---
 
 # <% projectName %>
+
 Прогресс: `$=dv.el("progress", "", {attr: {max: 100, value: dv.current().progress}, style: "width:150px;height:20px;vertical-align:middle;"})` `$= dv.current().progress + "%"`
 
+> [!abstract] Сводка времени
+> **Дедлайн:** <% dueDate %> (`$= (()=>{ const d = dv.current()?.due_date; if (!d) return "—"; const diff = dv.date(d).diff(dv.date('today'), 'days').days; return Math.round(diff); })()` дн.)
+> **Статус:** #project/<% status %>
 
-## 🎯 Цель проекта
+## 🎯 Цели и описание
+- [ ] Главная цель проекта
+- Краткое описание контекста или желаемого результата.
 
-- [ ] цель 1
+## 🛠 Ресурсы и ссылки
+- **Материалы:** 
+- **Полезные ссылки:** 
 
 ## 📋 Основные задачи
 ![[<% baseName %>]]
+
+## 📂 Недавние файлы проекта
+```dataview
+list from "<% folderPath %>"
+where file.name != this.file.name
+sort file.mday desc
+limit 5

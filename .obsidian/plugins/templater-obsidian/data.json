@@ -12,11 +12,11 @@
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "Core/Scripts",
-  "enable_folder_templates": true,
+  "enable_folder_templates": false,
   "folder_templates": [
     {
-      "folder": "",
-      "template": ""
+      "folder": "Core",
+      "template": "Core/Templates/Daily Note.md"
     }
   ],
   "enable_file_templates": false,

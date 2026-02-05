@@ -3,7 +3,6 @@
   "quickadd",
   "templater-obsidian",
   "obsidian-minimal-settings",
-  "dataview",
   "table-editor-obsidian",
   "obsidian-excalidraw-plugin",
   "obsidian-kanban",
@@ -11,5 +10,6 @@
   "extended-graph",
   "pretty-properties",
   "iconic",
-  "obsidian-paste-image-rename"
+  "obsidian-paste-image-rename",
+  "dataview"
 ]
