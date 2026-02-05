@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Core/Templates/Note.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Note"
             }
           }
         ]
@@ -188,8 +188,10 @@
       "iconic:Open rulebook": false
     }
   },
-  "active": "0ee22e777ce26351",
+  "active": "9f698926aec56cf5",
   "lastOpenFiles": [
+    "Core/Templates/Daily Note.md",
+    "Untitled.md",
     "README.md",
     "00 - Projects/Проект Я/Новая задача.md",
     "00 - Projects/Проект Я/Проект Я.md",
@@ -215,10 +217,8 @@
     "04 - Daily/2026-02-06.md",
     "Untitled 2.md",
     "Untitled 1.md",
-    "Untitled.md",
     "04 - Daily/template.md",
     "04 - Daily/2026-02-07.md",
-    "Core/Templates/Daily Note.md",
     "04 - Daily.md",
     "04 - Daily/.md",
     "04 - Daily/2026-01-30.md",

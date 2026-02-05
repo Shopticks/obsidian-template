@@ -20,12 +20,12 @@ const dailyFiles = allFiles.filter(file => {
 dailyFiles.sort((a, b) => b.basename.localeCompare(a.basename));
 
 let prevLinkStr = "..."; 
-let nextLinkStr = "ожидание"; 
+let nextLinkStr = "Ожидание"; 
 
 if (dailyFiles.length > 0) {
     const latestPrevFile = dailyFiles[0]; 
     
-    prevLinkStr = `[[${latestPrevFile.basename}|прошлый]]`;
+    prevLinkStr = `[[${latestPrevFile.basename}|Прошлый]]`;
 
     try {
         const content = await app.vault.read(latestPrevFile);
@@ -33,7 +33,7 @@ if (dailyFiles.length > 0) {
         const regex = /(\|\|\s*)(ожидание)(\s*>)/;
         
         if (regex.test(content)) {
-            const newContent = content.replace(regex, `$1[[${currentDate}|следующий]]$3`);
+            const newContent = content.replace(regex, `$1[[${currentDate}|Следующий]]$3`);
             
             if (content !== newContent) {
                 await app.vault.modify(latestPrevFile, newContent);
