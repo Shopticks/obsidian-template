@@ -1,0 +1,14 @@
+{
+  "translucency": true,
+  "nativeMenus": true,
+  "showRibbon": true,
+  "baseFontSizeAction": false,
+  "cssTheme": "AnuPpuccin",
+  "accentColor": "#8a5cf4",
+  "enabledCssSnippets": [
+    "properties-colors",
+    "rainbow-indents",
+    "media-grid-snippet"
+  ],
+  "theme": "obsidian"
+}

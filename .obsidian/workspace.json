@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "dadea09f9a75a698",
+    "type": "split",
+    "children": [
+      {
+        "id": "122e2870f0d241e5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f71c0f1be7eb5bb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Core/Templates/Daily Note.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Daily Note"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bc9994b04a6ec6bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "11b9eb577bbd46b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ee22e777ce26351",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8b822dfb4c84d6bc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "7fc4938fb641fe3b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c9a1cb238bcd74e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fbf0b00d1f01e70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a03937839fbd932",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "templates/This is a test.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для This is a test"
+            }
+          },
+          {
+            "id": "a86a1561a4cc8b71",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "templates/This is a test.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из This is a test"
+            }
+          },
+          {
+            "id": "23854bc79faced5e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "478c3b4ea87c959c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "d8f8f969208f848f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "templates/This is a test.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура This is a test"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Create new board": false,
+      "iconic:Open rulebook": false
+    }
+  },
+  "active": "0ee22e777ce26351",
+  "lastOpenFiles": [
+    "04 - Daily/2026-02-05.md",
+    "04 - Daily.md",
+    "Core/Templates/Daily Note.md",
+    "04 - Daily/.md",
+    "04 - Daily/2026-01-30.md",
+    "Core/Templates/Test.md",
+    "Untitled 5.md",
+    "Core/Temp/nigel-hoare-Jpz3YYSU-xg-unsplash.jpg",
+    "Core/Temp/emmanuel-munoz-qSFnTa6e9LI-unsplash.jpg",
+    "Core/Temp/jwebfiwebfiw.jpg",
+    "Core/Temp/emmanuel-munoz-qSFnTa6e9LI-unsplash 1.jpg",
+    "Core/Temp/florian-schindler-WxTIb8s-sTk-unsplash.jpg",
+    "Untitled 9.md",
+    "00 - Projects/Проект Ntcnf/Проект Ntcnf.md",
+    "00 - Projects/Проектх/Проектх.md",
+    "00 - Projects/Проект Ntcnf/Base Of Tasks for Проект Ntcnf.base",
+    "00 - Projects/Проект Ntcnf",
+    "00 - Projects/Проектх/Base Of Tasks for Проектх.base",
+    "00 - Projects/Проект з/Проект з.md",
+    "00 - Projects/Проектх",
+    "Core/Templates/Project.md",
+    "00 - Projects/Проект з/Base Of Tasks for Проект з.base",
+    "00 - Projects/Проект з",
+    "00 - Projects/null/null.md",
+    "00 - Projects/null/Base Of Tasks for null.base",
+    "00 - Projects/null",
+    "Untitled 8.md",
+    "Core/Scripts/image.js",
+    "Untitled 7.md",
+    "Untitled 6.md",
+    "Untitled 2.md",
+    "Core/Templates/Task.md",
+    "00 - Projects/Проект/Проект.md",
+    "00 - Projects/Проект/Новая задача.md",
+    "00 - Projects/Проект/Base Of Tasks for Проект.base",
+    "Untitled 4.md",
+    "Untitled 3.md",
+    "Untitled 1.md",
+    "00 - Projects/Проект Х/Проект Х.md",
+    "00 - Projects/Проект/Задача 3.md",
+    "image.png",
+    "Untitled.canvas"
+  ]
+}

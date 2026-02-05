@@ -1,0 +1,307 @@
+{
+  "hiddenProperties": [
+    "banner"
+  ],
+  "propertyPillColors": {
+    "ToDo": {
+      "textColor": {
+        "h": 215,
+        "s": 25,
+        "l": 27
+      },
+      "pillColor": {
+        "h": 220,
+        "s": 14,
+        "l": 96
+      }
+    },
+    "In-Progress": {
+      "textColor": {
+        "h": 204,
+        "s": 100,
+        "l": 32
+      },
+      "pillColor": {
+        "h": 204,
+        "s": 94,
+        "l": 94
+      }
+    },
+    "Done": {
+      "textColor": {
+        "h": 142,
+        "s": 76,
+        "l": 36
+      },
+      "pillColor": {
+        "h": 141,
+        "s": 84,
+        "l": 93
+      }
+    },
+    "Low": {
+      "textColor": {
+        "h": 243,
+        "s": 75,
+        "l": 45
+      },
+      "pillColor": {
+        "h": 226,
+        "s": 100,
+        "l": 94
+      }
+    },
+    "Medium": {
+      "textColor": {
+        "h": 32,
+        "s": 95,
+        "l": 35
+      },
+      "pillColor": {
+        "h": 48,
+        "s": 96,
+        "l": 89
+      }
+    },
+    "High": {
+      "textColor": {
+        "h": 0,
+        "s": 72,
+        "l": 40
+      },
+      "pillColor": {
+        "h": 0,
+        "s": 93,
+        "l": 94
+      }
+    },
+    "Active": {
+      "textColor": {
+        "h": 221,
+        "s": 83,
+        "l": 45
+      },
+      "pillColor": {
+        "h": 214,
+        "s": 95,
+        "l": 93
+      }
+    },
+    "Planning": {
+      "textColor": {
+        "h": 271,
+        "s": 81,
+        "l": 45
+      },
+      "pillColor": {
+        "h": 269,
+        "s": 100,
+        "l": 95
+      }
+    },
+    "Paused": {
+      "textColor": {
+        "h": 20,
+        "s": 90,
+        "l": 35
+      },
+      "pillColor": {
+        "h": 34,
+        "s": 100,
+        "l": 92
+      }
+    },
+    "Completed": {
+      "textColor": {
+        "h": 160,
+        "s": 84,
+        "l": 30
+      },
+      "pillColor": {
+        "h": 150,
+        "s": 94,
+        "l": 90
+      }
+    },
+    "Rejected": {
+      "textColor": {
+        "h": 215,
+        "s": 16,
+        "l": 40
+      },
+      "pillColor": {
+        "h": 210,
+        "s": 29,
+        "l": 96
+      }
+    },
+    "Daily": {
+      "textColor": {
+        "h": 185,
+        "s": 70,
+        "l": 30
+      },
+      "pillColor": {
+        "h": 185,
+        "s": 60,
+        "l": 93
+      }
+    },
+    "Task": {
+      "textColor": {
+        "h": 330,
+        "s": 65,
+        "l": 35
+      },
+      "pillColor": {
+        "h": 330,
+        "s": 70,
+        "l": 96
+      }
+    },
+    "Project": {
+      "textColor": {
+        "h": 235,
+        "s": 60,
+        "l": 40
+      },
+      "pillColor": {
+        "h": 235,
+        "s": 80,
+        "l": 95
+      }
+    },
+    "Note": {
+      "textColor": {
+        "h": 40,
+        "s": 85,
+        "l": 30
+      },
+      "pillColor": {
+        "h": 45,
+        "s": 100,
+        "l": 92
+      }
+    }
+  },
+  "propertyLongtextColors": {},
+  "tagColors": {},
+  "enableBanner": true,
+  "enableIcon": true,
+  "enableCover": true,
+  "bannerProperty": "banner",
+  "iconProperty": "icon",
+  "coverProperty": "cover",
+  "extraCoverProperties": [],
+  "bannerHeight": 150,
+  "bannerHeightMobile": 100,
+  "bannerHeightPopover": 100,
+  "bannerMargin": -20,
+  "bannerMarginMobile": 0,
+  "bannerFading": true,
+  "coverDefaultWidth1": 200,
+  "coverDefaultWidth2": 250,
+  "coverDefaultWidth3": 300,
+  "coverMaxHeight": 500,
+  "coverVerticalWidth": 200,
+  "coverHorizontalWidth": 300,
+  "coverSquareWidth": 250,
+  "coverCircleWidth": 250,
+  "coverMaxWidthPopover": 150,
+  "progressProperties": {
+    "progress": {
+      "maxNumber": 100
+    }
+  },
+  "allTasksCount": "tasks",
+  "completedTasksCount": "tasks_completed",
+  "uncompletedTasksCount": "tasks_uncompleted",
+  "completedTasksStatuses": [
+    "x"
+  ],
+  "uncompletedTasksStatuses": [
+    " "
+  ],
+  "bannersFolder": "",
+  "coversFolder": "",
+  "showColorSettings": true,
+  "showTextColorSettings": true,
+  "showHiddenSettings": false,
+  "iconsFolder": "",
+  "iconSize": 70,
+  "iconTopMargin": 70,
+  "iconTopMarginMobile": 44,
+  "iconTopMarginWithoutBanner": -10,
+  "iconLeftMargin": 0,
+  "iconGap": 10,
+  "bannerIconGap": 0,
+  "bannerIconGapMobile": 20,
+  "iconColor": "",
+  "iconColorDark": "",
+  "iconBackground": false,
+  "bannerPositionProperty": "banner_position",
+  "addPillPadding": "all",
+  "addBaseTagColor": true,
+  "enableTasksCount": true,
+  "enableColorButtonInBases": false,
+  "customDateFormat": "",
+  "customDateTimeFormat": "",
+  "enableCustomDateFormat": false,
+  "enableCustomDateFormatInBases": false,
+  "enableRelativeDateColors": false,
+  "settingsTab": "BANNERS",
+  "enableTaskNotesCount": false,
+  "allTNTasksCount": "tn_tasks",
+  "completedTNTasksCount": "tn_tasks_completed",
+  "uncompletedTNTasksCount": "tn_tasks_uncompleted",
+  "allTNProjectTasksCount": "tn_project_tasks",
+  "completedTNProjectTasksCount": "tn_project_tasks_completed",
+  "uncompletedTNProjectTasksCount": "tn_project_tasks_uncompleted",
+  "allTNInlineTasksCount": "tn_inline_tasks",
+  "completedTNInlineTasksCount": "tn_inline_tasks_completed",
+  "uncompletedTNInlineTasksCount": "tn_inline_tasks_uncompleted",
+  "allTNAndCheckboxTasksCount": "tn_and_checkbox_tasks",
+  "completedTNAndCheckboxTasksCount": "tn_and_checkbox_tasks_completed",
+  "uncompletedTNAndCheckboxTasksCount": "tn_and_checkbox_tasks_uncompleted",
+  "enableColoredProperties": true,
+  "enableColoredInlineTags": true,
+  "nonLatinTagsSupport": false,
+  "enableColorButton": true,
+  "propertySearchKey": "Ctrl",
+  "showTagColorSettings": false,
+  "iconSizeMobile": 70,
+  "iconSizePopover": 50,
+  "hidePropertiesInPropTab": false,
+  "autoTasksCount": true,
+  "enableColoredTagsInTagPane": true,
+  "mathProperties": [],
+  "enableMath": false,
+  "dataVersion": 0,
+  "dateColors": {
+    "past": {
+      "pillColor": "default",
+      "textColor": "default"
+    },
+    "present": {
+      "pillColor": "default",
+      "textColor": "default"
+    },
+    "future": {
+      "pillColor": "default",
+      "textColor": "default"
+    }
+  },
+  "coverPosition": "left",
+  "enableBannersInPopover": true,
+  "enableIconsInPopover": false,
+  "enableCoversInPopover": false,
+  "hideAllEmptyProperties": false,
+  "hiddenWhenEmptyProperties": [],
+  "iconInTitle": false,
+  "titleIconSize": 30,
+  "titleTextIconMatchTitleSize": true,
+  "imageLinkFormat": "link",
+  "hideMetadataContainerIfAllPropertiesHiddenEditing": false,
+  "hideMetadataContainerIfAllPropertiesHiddenReading": false,
+  "autoHidePropertiesWithBanner": false
+}
