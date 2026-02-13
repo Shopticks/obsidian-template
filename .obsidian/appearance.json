@@ -4,14 +4,15 @@
   "showRibbon": true,
   "baseFontSizeAction": false,
   "cssTheme": "AnuPpuccin",
-  "accentColor": "#8a5cf4",
+  "accentColor": "#e5609f",
   "enabledCssSnippets": [
     "properties-colors",
     "test",
     "daily-nav",
     "media-grid-snippet",
     "rainbow-indents",
-    "project-progress"
+    "project-progress",
+    "quote_callout"
   ],
   "theme": "obsidian"
 }

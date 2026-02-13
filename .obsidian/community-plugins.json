@@ -2,7 +2,6 @@
   "obsidian-mind-map",
   "quickadd",
   "templater-obsidian",
-  "obsidian-minimal-settings",
   "table-editor-obsidian",
   "obsidian-excalidraw-plugin",
   "obsidian-kanban",
@@ -11,5 +10,6 @@
   "pretty-properties",
   "iconic",
   "obsidian-paste-image-rename",
-  "dataview"
+  "dataview",
+  "obsidian-style-settings"
 ]

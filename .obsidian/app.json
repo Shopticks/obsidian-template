@@ -3,5 +3,6 @@
   "attachmentFolderPath": "Core/Temp",
   "readableLineLength": true,
   "rightToLeft": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false
 }
