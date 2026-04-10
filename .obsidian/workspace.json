@@ -4,46 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4dccb5271cbb278e",
+        "id": "57f894fc88b9924a",
         "type": "tabs",
         "children": [
           {
-            "id": "74c643df21cae44e",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Drawing 2026-02-10 11.42.47.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-02-10 11.42.47.excalidraw"
-            }
-          },
-          {
-            "id": "32718eef8c39726f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Drawing 2026-02-10 11.42.47.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-02-10 11.42.47.excalidraw"
-            }
-          },
-          {
-            "id": "d611aa49d47f860f",
+            "id": "0542c99f82a90dab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "00 - Projects/Лабораторные работы (БГУИР)/Лабораторные работы (БГУИР).md",
                 "mode": "preview",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Лабораторные работы (БГУИР)"
             }
           }
         ]
@@ -189,8 +165,19 @@
               "icon": "lucide-list",
               "title": "Структура This is a test"
             }
+          },
+          {
+            "id": "3fa8083d6bf4eace",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -208,56 +195,58 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-kanban:Create new board": false,
-      "iconic:Open rulebook": false
+      "iconic:Open rulebook": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "74c643df21cae44e",
+  "active": "0542c99f82a90dab",
   "lastOpenFiles": [
-    "Drawing 2026-02-10 11.42.47.excalidraw.md",
-    "01 - Areas/Programming/Languages/Git/Git конфигурация.md",
-    "README.md",
+    "Core/Templates/UpdateProgress.md",
     "Untitled.md",
-    "touch",
+    "Core/Templates/Project.md",
     "Core/Templates/Note.md",
+    "00 - Projects/Лабораторные работы (БГУИР)/Новая задача2.md",
+    "00 - Projects/Лабораторные работы (БГУИР)/ППОИС, ЛР 2.md",
+    "00 - Projects/Лабораторные работы (БГУИР)/Новая задача.md",
+    "00 - Projects/Лабораторные работы (БГУИР)/ВОВКА, Доклад.md",
+    "00 - Projects/Лабораторные работы (БГУИР)/Лабораторные работы (БГУИР).md",
+    "Core/Templates/Task.md",
+    "Core/Scripts/recalcProjectProgress.js",
+    "00 - Projects/Лабораторные работы (БГУИР)/Base Of Tasks for Лабораторные работы (БГУИР).base",
+    "03 - Archive/БГУИР/Доклад по ВОВКЕ.md",
+    "03 - Archive/БГУИР",
+    "README.md",
+    "Untitled.base",
+    "Drawing 2026-02-10 11.42.47.excalidraw.md",
+    "Core/Temp/Лекция 2.pdf",
+    "00 - Projects/Лабораторные работы (БГУИР)",
+    "Core/Temp/study_1.jpg",
+    "Untitled 1.md",
+    "Core/Scripts/gbe/gbe.sh",
+    "Core/Scripts/gbe",
+    "Core/Scripts/go_to_obsidian/test.md",
+    "Core/Scripts/go_to_obsidian/test.go",
+    "Core/Scripts/go_to_obsidian/go_to_obsidian.sh",
+    "Core/Scripts/go2obsidian/SETUP.md",
+    "Untitled Kanban.md",
+    "Core/Templates/Daily Note.md",
+    "Core/Scripts/Dataview For Project.md",
+    "Core/Scripts/go_to_obsidian/SETUP.md",
+    "Описание сервисов ТОиР.md",
+    "00 - Projects/Проект/Проект.md",
+    "00 - Projects/Проект/Новая задача.md",
+    "04 - Daily/2026-03-22.md",
+    "01 - Areas/Programming/Languages/Git/Git конфигурация.md",
     "Excalidraw/Scripts/Downloaded/Add Connector Point.svg",
     "Excalidraw/Scripts/Downloaded/Add Connector Point.md",
     "Excalidraw/Scripts/Downloaded/Connect elements.svg",
-    "Excalidraw/Scripts/Downloaded/Connect elements.md",
     "Excalidraw/Scripts/Downloaded/Change shape of selected elements.svg",
-    "Excalidraw/Scripts/Downloaded/Change shape of selected elements.md",
     "Excalidraw/Scripts/Downloaded/Auto Layout.svg",
-    "Excalidraw/Scripts/Downloaded/Auto Layout.md",
-    "Excalidraw/Scripts/Downloaded",
-    "Excalidraw/Scripts",
-    "Excalidraw",
-    "Core/Templates/Daily Note.md",
-    "00 - Projects/Проект Я/Новая задача.md",
-    "00 - Projects/Проект Я/Проект Я.md",
-    "00 - Projects/Проектwkfnoeiwnf/Проектwkfnoeiwnf.md",
-    "00 - Projects/Проект Я/Base Of Tasks for Проект Я.base",
-    "00 - Projects/Проект Я",
-    "00 - Projects/Проектjfwbk/Проектjfwbk.md",
-    "00 - Projects/Проектwkfnoeiwnf/Base Of Tasks for Проектwkfnoeiwnf.base",
-    "00 - Projects/Проектwkfnoeiwnf",
-    "00 - Projects/Проект Х/Проект Х.md",
-    "00 - Projects/Проектjfwbk/Base Of Tasks for Проектjfwbk.base",
-    "00 - Projects/Проектjfwbk",
-    "00 - Projects/Проектwfe/Проектwfe.md",
-    "00 - Projects/Проекта/Проекта.md",
-    "00 - Projects/Новый проект/Новый проект.md",
-    "00 - Projects/Проект/Проект.md",
-    "04 - Daily/2026-02-05.md",
-    "04 - Daily/2026-02-09.md",
-    "04 - Daily/2026-02-06.md",
-    "Untitled 2.md",
-    "04 - Daily/template.md",
-    "04 - Daily/2026-02-07.md",
     "Core/Temp/nigel-hoare-Jpz3YYSU-xg-unsplash.jpg",
     "Core/Temp/emmanuel-munoz-qSFnTa6e9LI-unsplash.jpg",
     "Core/Temp/jwebfiwebfiw.jpg",
     "Core/Temp/emmanuel-munoz-qSFnTa6e9LI-unsplash 1.jpg",
     "Core/Temp/florian-schindler-WxTIb8s-sTk-unsplash.jpg",
-    "image.png",
     "Untitled.canvas"
   ]
 }

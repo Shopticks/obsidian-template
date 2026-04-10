@@ -6,7 +6,7 @@ const daysOffset = await tp.system.prompt("Дедлайн (дней от сег�
 const dueDate = tp.date.now("YYYY-MM-DD", parseInt(daysOffset) || 0);
 
 const projectFolders = app.vault.getAbstractFileByPath("00 - Projects")?.children
-    .filter(f => f instanceof tp.obsidian.TFolder)
+    .filter(f => typeof f.children !== "undefined") // Папки имеют свойство children, файлы - нет
     .map(f => f.name) || [];
 
 let projectName = await tp.system.suggester(["Без проекта", "+ Создать новый...", ...projectFolders], ["none", "new", ...projectFolders]);
@@ -35,6 +35,7 @@ status:
   - ${status}
 priority:
   - ${priority}
+progress: 0
 due_date: ${dueDate}
 created: ${tp.date.now("YYYY-MM-DD")}
 ---
@@ -44,7 +45,7 @@ created: ${tp.date.now("YYYY-MM-DD")}
 > [!info] Инфо
 > **Проект:** ${projectName && projectName !== "none" ? `[[${projectName}]]` : "—"}
 > **Приоритет:** ${priority}
-> **Дедлайн:** ${dueDate}
+> **Дедлайн:** ${dueDate} (осталось: \`$= (()=>{ const d = dv.current()?.due_date; if (!d) return "—"; const diff = dv.date(d).diff(dv.date('today'), 'days').days; return Math.round(diff); })()\` дн.)
 
 ## 🎯 Суть задачи
 *Краткое описание того, что именно нужно сделать и зачем.*
@@ -63,4 +64,6 @@ created: ${tp.date.now("YYYY-MM-DD")}
 `;
 
 tR += content;
+
+await tp.user.recalcProjectProgress();
 %>

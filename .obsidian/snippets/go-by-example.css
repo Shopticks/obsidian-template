@@ -1,0 +1,155 @@
+/* =============================================
+   Go by Example Style for Obsidian
+   Requires: Multi-column Markdown plugin
+   ============================================= */
+
+/* --- Page background --- */
+.theme-dark .mod-root .view-content,
+.theme-dark .markdown-preview-view {
+  background-color: #1a1a1a;
+}
+
+/* --- Base font for the note --- */
+.markdown-preview-view {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 15px;
+  color: #d4d4d4;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* --- Multi-column container --- */
+.columnParent {
+  gap: 0 !important;
+  align-items: stretch !important;
+}
+
+/* --- Left column (description) --- */
+.columnParent > .columnContent:first-child {
+  background-color: #1a1a1a;
+  padding: 2rem 2.5rem;
+  border-right: none;
+  color: #d4d4d4;
+  font-family: 'Georgia', serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* --- Right column (code) --- */
+.columnParent > .columnContent:last-child {
+  background-color: #111111;
+  padding: 0;
+  border-left: 1px solid #2a2a2a;
+}
+
+/* --- Code blocks inside right column --- */
+.columnParent > .columnContent:last-child pre {
+  background-color: #1e1e1e !important;
+  border: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 1.5rem !important;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace !important;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  overflow-x: auto;
+}
+
+/* --- Terminal / output block --- */
+.columnParent > .columnContent:last-child .callout[data-callout="terminal"] {
+  background-color: #0d0d0d !important;
+  border: none !important;
+  border-top: 1px solid #2a2a2a !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 1rem 1.5rem !important;
+}
+
+.columnParent > .columnContent:last-child .callout[data-callout="terminal"] .callout-content {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 13px;
+  color: #9cdcfe;
+  line-height: 1.8;
+}
+
+.columnParent > .columnContent:last-child .callout[data-callout="terminal"] .callout-title {
+  display: none; /* hide callout title bar */
+}
+
+/* --- Syntax highlighting colors (Go-style) --- */
+/* Keywords: func, package, import, if, else */
+.token.keyword { color: #569cd6 !important; }
+
+/* Strings */
+.token.string { color: #ce9178 !important; }
+
+/* Numbers */
+.token.number { color: #b5cea8 !important; }
+
+/* Functions */
+.token.function { color: #dcdcaa !important; }
+
+/* Comments */
+.token.comment { color: #6a9955 !important; font-style: italic; }
+
+/* Operators */
+.token.operator { color: #d4d4d4 !important; }
+
+/* Punctuation */
+.token.punctuation { color: #808080 !important; }
+
+/* --- Inline code (monospace in description) --- */
+.markdown-preview-view code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 13px;
+  background-color: #2a2a2a;
+  color: #9cdcfe;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+/* --- Section divider between rows --- */
+.markdown-preview-view hr {
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  margin: 0;
+}
+
+/* --- Headings --- */
+.markdown-preview-view h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #e8e8e8;
+  padding: 2rem 2.5rem 1rem;
+  margin: 0;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.markdown-preview-view h2 {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #c8c8c8;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Links --- */
+.markdown-preview-view a {
+  color: #9cdcfe;
+  text-decoration: underline;
+}
+
+/* --- "Next example" footer area --- */
+.markdown-preview-view p:last-child {
+  padding-bottom: 1rem;
+}
+
+/* =============================================
+   OPTIONAL: Full dark scrollbar
+   ============================================= */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #4a4a4a; }

@@ -34,6 +34,19 @@
   "tagIcons": {},
   "propertyIcons": {},
   "ribbonIcons": {},
-  "fileRules": [],
+  "fileRules": [
+    {
+      "id": "vl7ry",
+      "name": "Untitled rule",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "contains"
+        }
+      ],
+      "enabled": false
+    }
+  ],
   "folderRules": []
 }

@@ -1,5 +1,5 @@
 {
-  "translucency": true,
+  "translucency": false,
   "nativeMenus": true,
   "showRibbon": true,
   "baseFontSizeAction": false,
@@ -10,9 +10,11 @@
     "test",
     "daily-nav",
     "media-grid-snippet",
-    "rainbow-indents",
     "project-progress",
-    "quote_callout"
+    "quote_callout",
+    "rainbow-indents"
   ],
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "floatingNavigation": false,
+  "showViewHeader": true
 }

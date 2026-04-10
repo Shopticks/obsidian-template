@@ -1,16 +1,11 @@
 {
   "command_timeout": 5,
   "templates_folder": "Core/Templates",
-  "templates_pairs": [
-    [
-      "",
-      ""
-    ]
-  ],
+  "templates_pairs": [],
   "trigger_on_file_creation": false,
   "auto_jump_to_cursor": false,
-  "enable_system_commands": false,
-  "shell_path": "",
+  "enable_system_commands": true,
+  "shell_path": "$HOME/.oh-my-zsh/oh-my-zsh.sh",
   "user_scripts_folder": "Core/Scripts",
   "enable_folder_templates": false,
   "folder_templates": [

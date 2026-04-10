@@ -4,5 +4,15 @@
   "readableLineLength": true,
   "rightToLeft": false,
   "alwaysUpdateLinks": true,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "showInlineTitle": true,
+  "propertiesInDocument": "source",
+  "spellcheck": false,
+  "showIndentGuide": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
